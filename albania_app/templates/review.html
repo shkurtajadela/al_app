@@ -1,0 +1,61 @@
+<!DOCTYPE HTML>
+{% load static %}
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title> Албания </title>
+	<link rel = "icon" href="{% static 'img/logo1.png' %}" type = "image/x-icon">
+	<link type="text/css" rel="stylesheet" href="{% static 'css/review.css' %}">
+</head>
+<body>
+<header>
+		<img src="{% static 'img/logo.png' %}">
+		<ul class="social-icons">
+			<li><a href="" class="social-icon"> <i class="fa fa-facebook"></i></a></li>
+			<li><a href="" class="social-icon"> <i class="fa fa-instagram"></i></a></li>
+			<li><a href="" class="social-icon"> <i class="fa fa-youtube"></i></a></li>
+		</ul>
+
+		{% include 'nav.html' %}
+</header>
+<br>
+<table>
+	<tr>
+		<div class="reviews">
+		<fieldset style="width:80%; margin: 4vh auto;">
+		<legend style = "font-family:serif;font-size:17px;">Задайте вопрос об Албании</legend>
+		<form action="" method="POST">
+			{% csrf_token %}
+			<label for="name">Имя*:</label>
+			<input type="text" placeholder="Имя" id="name" name="name" required>
+			<label for="surname">Фамилия*: </label>
+			<input type="text" id="surname" placeholder="Фамилия" name="surname" required>
+			<p><label id="email-label" for="email">Email*: <br></label>
+				<input type="text" id="email" name="email" placeholder="Почта" required> <br>
+			</p>
+
+			<p>Вопрос*: <br>
+			<textarea id="comments" name="comment" placeholder="Вопрос...?" rows="5" cols="60" required>
+			</textarea></p>
+
+            <input type="hidden" value="page">
+            <input type="hidden" value="4"></p>
+			<input type="reset" value="Обновить"/>
+			<input type="submit" value="Отправить"/>
+
+			<p style="font-size:14px">* - обязательно заполните!</p>
+
+		</form>
+		</fieldset>
+		</div>
+	</tr>
+
+</table>
+
+<footer>
+	<p class="copyright"> Copyright ©2021 </p>
+</footer>
+</body>
+</html>

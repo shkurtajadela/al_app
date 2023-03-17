@@ -1,0 +1,19 @@
+<ul class="menu-main">
+    <li><a href="{% url 'home' %}" id="index" title='Menu'>Обзор</a>
+        <ul class='menus_1'>
+        <li><a href="./#general_facts" name="general_facts">Общие сведения</a></li>
+        <li><a href="./#video" name="video">Албания за минуту</a></li>
+        <li><a href="./#history" name="history">История</a></li>
+        <li><a href="./#food" name="food">Кухня</a></li>
+        </ul>
+    </li>
+    <li><a href="{% url 'visit' %}" id="visit" target="_blank">Куда сходить</a>
+        <ul class='menus_2'>
+            <li><a href="./visit#tirana" name="tirana" title="Dropdown 2_1">Тирана</a></li>
+            <li><a href="./visit#vlore" name="vlore" title="Dropdown 2_2">Влëра</a></li>
+            <li><a href="./visit#shkoder" name="shkoder" title="Dropdown 2_3">Шкодер</a></li>
+        </ul>
+    </li>
+    <li><a href="{% url 'tour' %}" id="tour" target="_blank">Неделя в Албании</a></li>
+    <li><a href="{% url 'review' %}" id="overview" target="_blank">Контакты</a></li>
+</ul>

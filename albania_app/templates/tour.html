@@ -1,0 +1,130 @@
+<!DOCTYPE HTML>
+{% load static %}
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title> Албания </title>
+	<link rel = "icon" href="{% static 'img/logo1.png' %}" type = "image/x-icon">
+	<link type="text/css" rel="stylesheet" href="{% static 'css/tour.css' %}">
+</head>
+<body>
+<header>
+		<img src="{% static 'img/logo.png' %}">
+		<ul class="social-icons">
+			<li><a href="" class="social-icon"> <i class="fa fa-facebook"></i></a></li>
+			<li><a href="" class="social-icon"> <i class="fa fa-instagram"></i></a></li>
+			<li><a href="" class="social-icon"> <i class="fa fa-youtube"></i></a></li>
+		</ul>
+
+		{% include 'nav.html' %}
+</header>
+<table>
+<br><br>
+
+		<tr>
+			<tr class="general">
+		<td id="permbledhje">
+			<h3>Куда сходить на неделю в Албании?</h3>
+		</td>
+		</tr>
+		<tr class="general_2">
+			<td><div class="sit-in-the-corner">
+				Мы начнем наше путешествие из Тираны.
+				В <a href="./visit#tirana" target="_blank" style="text-decoration:none;color:white">Тиране</a> вы можете посетить
+				площадь Скандербега, Bunk 'Art, Дайт и озеро Бовилла. Затем переезжаем из Тираны в Шкодер. Лучше остаться там на 2 дня. Посетите крепость Розафа,
+				Скадарское озеро, национальный парк долина Валбона, Тети.
+				Потом едем в Гирокастер. Этот город имеет статус города-музея и  включён в список объектов Всемирного наследия ЮНЕСКО, как хорошо сохранившийся
+				город времён Османской империи. Там можно посетить Крепость Гирокастер, Старый город, Голубой Глаз и Термальных ванн  в Бенье.
+				Следующим пунктом назначения будет Саранда. Саранда расположена на побережье Ионического моря, напротив греческого острова Корфу. Неподалёку расположен
+				археологический музей-заповедник — руины древнего города Бутринти — объекта всемирного наследия ЮНЕСКО, а также остатки другого античного города Финичи,
+				в котором, как считают некоторые исследователи, находится Акрополь, подобный афинскому, но только значительно больше по своим размерам.  Еще в
+				Саранде стоит посетить Крепость Сулеймана Великолепного в Лекурси, Ксамил, Крорез и Люкова.
+				Последний город, который вам нужно посетить, - это Влера. Купаться здесь можно как на Адриатическом море, так и на Юонике. Следует посетить Музей
+				Независимости, Монастырь Звернец, Крепость Канина, Остров Сазан, Полуостров Карабурун,  Пляж Джипеа.
+			</td></div>
+		</tr>
+		</tr>
+
+			<tr>
+		<!-- Slideshow container -->
+		<div class="slideshow-container">
+
+		<!-- Full-width images with number and caption text -->
+		<div class="mySlides fade">
+		<img src="{% static 'img/gjirokaster.png' %}" style="margin-left:100px;height:300px">
+		<div class="text">Gjirokastër</div>
+		</div>
+
+		<div class="mySlides fade">
+		<img src="{% static 'img/kalaja.png' %}" style="margin-left:100px;height:300px">
+		<div class="text">Kalaja e Gjirokastrës</div>
+		</div>
+
+		<div class="mySlides fade">
+		<img src="{% static 'img/benj.png' %}" style="margin-left:60px;height:350px">
+		<div class="text">Banjat e Bënjës, Përmet</div>
+		</div>
+
+		<div class="mySlides fade">
+		<img src="{% static 'img/merli.png' %}" style="margin-left:170px;height:350px">
+		<div class="text">Kep Merli, Sarande</div>
+		</div>
+
+		<div class="mySlides fade">
+		<img src="{% static 'img/syr-sar.png' %}" style="margin-left:30px;height:350px">
+		<div class="text">Syri i kaltër, Sarandë</div>
+		</div>
+
+		<div class="mySlides fade">
+		<img src="{% static 'img/lekurs.png' %}" style="margin-left:150px;height:350px">
+		<div class="text">Kalaja e Lëkursit</div>
+		</div>
+
+		<div class="mySlides fade">
+		<img src="{% static 'img/ksamil2.png' %}" style="margin-left:180px;height:350px">
+		<div class="text">Ksamil, Sarande</div>
+		</div>
+
+		<div class="mySlides fade">
+		<img src="{% static 'img/dherm.png' %}" style="margin-left:180px;height:350px">
+		</div>
+
+		<div class="mySlides fade">
+		<img src="{% static 'img/butr.png' %}" style="margin-left:130px;height:400px">
+		<div class="text">Butrint, Sarande</div>
+		</div>
+
+		<div class="mySlides fade">
+		<img src="{% static 'img/krorez.png' %}" style="margin-left:120px;height:350px">
+		<div class="text">Krorez</div>
+		</div>
+
+		</div>
+		<br>
+
+
+		<!-- The dots/circles -->
+		<div style="text-align:center">
+		<span class="dot" onclick="currentSlide(1)"></span>
+		<span class="dot" onclick="currentSlide(2)"></span>
+		<span class="dot" onclick="currentSlide(3)"></span>
+		<span class="dot" onclick="currentSlide(4)"></span>
+		<span class="dot" onclick="currentSlide(5)"></span>
+		<span class="dot" onclick="currentSlide(6)"></span>
+		<span class="dot" onclick="currentSlide(7)"></span>
+		<span class="dot" onclick="currentSlide(8)"></span>
+		<span class="dot" onclick="currentSlide(9)"></span>
+		<span class="dot" onclick="currentSlide(10)"></span>
+		</div>
+		</tr>
+</table>
+
+
+<footer>
+	<p class="copyright"> Copyright ©2021 </p>
+</footer>
+<script src="{% static 'js/tour.js' %}"> </script>
+</body>
+</html>
